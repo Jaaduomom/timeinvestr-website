@@ -1,0 +1,547 @@
+/* Responsive Design for TimeInvestr Website */
+
+/* Large Desktop (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .hero-container {
+        max-width: 1200px;
+    }
+}
+
+/* Desktop (992px to 1199px) */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-container {
+        max-width: 960px;
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-4xl);
+    }
+    
+    .section-title {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+/* Tablet (768px to 991px) */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero-container {
+        max-width: 720px;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-base);
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--spacing-lg);
+    }
+    
+    .steps-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .download-features {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--spacing-lg);
+    }
+    
+    .nav-menu {
+        gap: var(--spacing-md);
+    }
+    
+    .nav-link {
+        font-size: var(--font-size-sm);
+    }
+}
+
+/* Mobile Large (576px to 767px) */
+@media (max-width: 767px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .nav-container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .hero {
+        padding-top: 100px;
+        padding-bottom: var(--spacing-2xl);
+    }
+    
+    .hero-container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-2xl);
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-sm);
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto var(--spacing-lg);
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .stat-item {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .app-preview {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .floating-card {
+        display: none; /* Hide floating cards on mobile for cleaner look */
+    }
+    
+    .features {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .feature-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .how-it-works {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .steps-container {
+        gap: var(--spacing-md);
+    }
+    
+    .step {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .step-number {
+        margin: 0 auto;
+    }
+    
+    .download {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .download-content h2 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .download-content p {
+        font-size: var(--font-size-base);
+    }
+    
+    .download-btn img {
+        height: 50px;
+    }
+    
+    .footer {
+        padding: var(--spacing-2xl) 0 var(--spacing-md);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--spacing-lg);
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    /* Mobile Navigation */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: var(--shadow-medium);
+        padding: var(--spacing-lg) 0;
+        gap: var(--spacing-md);
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-link {
+        font-size: var(--font-size-lg);
+        padding: var(--spacing-sm) 0;
+    }
+    
+    .download-btn {
+        margin: var(--spacing-sm) 0;
+        width: 200px;
+        justify-content: center;
+    }
+}
+
+/* Mobile Small (up to 575px) */
+@media (max-width: 575px) {
+    .hero-title {
+        font-size: var(--font-size-xl);
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-xs);
+    }
+    
+    .section-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .section-subtitle {
+        font-size: var(--font-size-sm);
+    }
+    
+    .feature-title {
+        font-size: var(--font-size-lg);
+    }
+    
+    .feature-description {
+        font-size: var(--font-size-sm);
+    }
+    
+    .app-preview {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .hero-stats {
+        gap: var(--spacing-sm);
+    }
+    
+    .stat-number {
+        font-size: var(--font-size-xl);
+    }
+    
+    .stat-label {
+        font-size: var(--font-size-xs);
+    }
+    
+    .btn {
+        font-size: var(--font-size-sm);
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+    
+    .download-btn img {
+        height: 45px;
+    }
+    
+    .floating-card {
+        display: none;
+    }
+}
+
+/* Extra Small Mobile (up to 375px) */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: var(--font-size-lg);
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-xs);
+        line-height: 1.5;
+    }
+    
+    .app-preview {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .hero-buttons {
+        max-width: 250px;
+    }
+    
+    .btn {
+        font-size: var(--font-size-xs);
+        padding: var(--spacing-xs);
+    }
+    
+    .download-btn img {
+        height: 40px;
+    }
+    
+    .feature-card {
+        padding: var(--spacing-md);
+    }
+    
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .feature-icon i {
+        font-size: var(--font-size-xl);
+    }
+}
+
+/* Landscape Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding-top: 80px;
+        padding-bottom: var(--spacing-lg);
+    }
+    
+    .hero-container {
+        gap: var(--spacing-md);
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-2xl);
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-sm);
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .hero-buttons {
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .hero-stats {
+        gap: var(--spacing-sm);
+    }
+    
+    .app-preview {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo-img,
+    .app-preview,
+    .feature-icon {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .hero-buttons,
+    .download,
+    .footer {
+        display: none;
+    }
+    
+    .hero {
+        padding-top: 0;
+        background: white;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    h1, h2, h3 {
+        break-after: avoid;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .floating-card {
+        animation: none;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-white: #1a1a1a;
+        --background-light: #2d2d2d;
+        --text-primary: #ffffff;
+        --text-secondary: #b0b0b0;
+        --border-color: #404040;
+    }
+    
+    .navbar {
+        background: rgba(26, 26, 26, 0.95);
+        border-bottom-color: var(--border-color);
+    }
+    
+    .feature-card {
+        background: var(--background-white);
+        border-color: var(--border-color);
+    }
+    
+    .floating-card {
+        background: var(--background-white);
+        color: var(--text-primary);
+    }
+}
+
+/* Focus Styles for Accessibility */
+.nav-link:focus,
+.btn:focus,
+.download-btn:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Hover Effects (only on devices that support hover) */
+@media (hover: hover) {
+    .feature-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .btn:hover {
+        transform: translateY(-2px);
+    }
+    
+    .download-btn:hover img {
+        transform: scale(1.05);
+    }
+}
+
+/* Touch Device Optimizations */
+@media (pointer: coarse) {
+    .btn,
+    .nav-link,
+    .download-btn {
+        min-height: 44px; /* Minimum touch target size */
+        min-width: 44px;
+    }
+    
+    .feature-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .hero-buttons {
+        gap: var(--spacing-sm);
+    }
+}
+
+/* New Sections Responsive Styles */
+@media (max-width: 767px) {
+    /* Screenshots Section Mobile */
+    .screenshots-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .screenshot-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Support & Donation Mobile */
+    .support-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .donation-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .donation-option {
+        padding: var(--spacing-lg);
+    }
+}
