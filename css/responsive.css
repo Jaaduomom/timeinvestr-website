@@ -519,6 +519,50 @@
 
 /* New Sections Responsive Styles */
 @media (max-width: 767px) {
+    /* Feature Showcase Mobile */
+    .feature-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .feature-showcase.reverse .feature-content {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-showcase.reverse .feature-text,
+    .feature-showcase.reverse .feature-image {
+        order: unset;
+    }
+
+    .feature-text .feature-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .feature-text .feature-description {
+        font-size: var(--font-size-base);
+    }
+
+    .app-screenshot {
+        max-width: 250px;
+    }
+
+    .app-preview {
+        width: 180px;
+        height: 180px;
+    }
+
+    .floating-card {
+        display: none;
+    }
+
+    .floating-card.card-1,
+    .floating-card.card-2 {
+        display: flex;
+        position: static;
+        margin: var(--spacing-sm) 0;
+        animation: none;
+    }
+
     /* Screenshots Section Mobile */
     .screenshots-grid {
         grid-template-columns: 1fr;
@@ -543,5 +587,110 @@
 
     .donation-option {
         padding: var(--spacing-lg);
+    }
+
+    /* Entertainment System Mobile */
+    .entertainment-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .entertainment-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .entertainment-description {
+        font-size: var(--font-size-base);
+    }
+
+    .entertainment-screenshot {
+        max-width: 250px;
+    }
+
+    .benefit-item {
+        padding: var(--spacing-sm);
+    }
+
+    .benefit-item h4 {
+        font-size: var(--font-size-base);
+    }
+
+    .benefit-item p {
+        font-size: var(--font-size-xs);
+    }
+
+    /* Data Deletion Page Mobile */
+    .data-deletion-content {
+        padding-top: 100px;
+        padding-bottom: var(--spacing-2xl);
+    }
+    
+    .data-deletion-header h1 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .data-deletion-body {
+        padding: var(--spacing-lg);
+        margin: 0 var(--spacing-sm);
+    }
+    
+    .step-container {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-md);
+    }
+    
+    .step-number {
+        margin: 0 auto;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .alternatives-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .support-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .warning-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .account-info {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-md);
+    }
+    
+    .account-icon {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-text .feature-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .app-screenshot {
+        max-width: 200px;
+    }
+
+    .app-preview {
+        width: 160px;
+        height: 160px;
+    }
+
+    .screenshot-img {
+        width: 120px;
+        height: 120px;
     }
 }
